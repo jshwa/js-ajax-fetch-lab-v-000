@@ -20,7 +20,7 @@ function createIssue() {
     "body": document.getElementById('body').value,
   };
   fetch(`https://api.github.com/repos/${repo}/issues`, {
-    method: post,
+    method: 'post',
     body: JSON.stringify(postData),
     headers: {
       Authorization: `token ${getToken()}`,
