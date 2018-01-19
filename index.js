@@ -17,7 +17,7 @@ function createIssue() {
   const repo = 'jshwa/javascript-fetch-lab'
   const postData = {
     "title": document.getElementById('title').value,
-    "body": document.getElementById('bod;').value,
+    "body": document.getElementById('body').value,
   };
   fetch(`https://api.github.com/repos/${repo}/issues`, {
     method: 'POST',
